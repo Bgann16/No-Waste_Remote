@@ -12,6 +12,8 @@ struct No_WasteApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.theme, Theme.default)
+
         }
     }
 }

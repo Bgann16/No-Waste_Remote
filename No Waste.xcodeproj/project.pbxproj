@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF0B9FEB2AAD035400EDF71E /* Auth0 in Frameworks */ = {isa = PBXBuildFile; productRef = EF0B9FEA2AAD035400EDF71E /* Auth0 */; };
+		EF0B9FEE2AAD035F00EDF71E /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = EF0B9FED2AAD035F00EDF71E /* SwiftKeychainWrapper */; };
+		EF0B9FF02AAD03E100EDF71E /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0B9FEF2AAD03E100EDF71E /* MotionManager.swift */; };
+		EF0B9FF22AAD069000EDF71E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0B9FF12AAD069000EDF71E /* Theme.swift */; };
+		EF0B9FF42AAD078100EDF71E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0B9FF32AAD078100EDF71E /* HomeView.swift */; };
+		EF0B9FF62AAD085200EDF71E /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0B9FF52AAD085200EDF71E /* UserViewModel.swift */; };
+		EF0B9FF82AAD924600EDF71E /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF0B9FF72AAD924600EDF71E /* Auth0.plist */; };
 		EFBEF3B32AA16ABD0029C9C9 /* No_WasteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBEF3B22AA16ABD0029C9C9 /* No_WasteApp.swift */; };
 		EFBEF3B52AA16ABD0029C9C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBEF3B42AA16ABD0029C9C9 /* ContentView.swift */; };
 		EFBEF3B72AA16AC20029C9C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFBEF3B62AA16AC20029C9C9 /* Assets.xcassets */; };
@@ -14,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF0B9FEF2AAD03E100EDF71E /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		EF0B9FF12AAD069000EDF71E /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		EF0B9FF32AAD078100EDF71E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EF0B9FF52AAD085200EDF71E /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		EF0B9FF72AAD924600EDF71E /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
 		EFBEF3AF2AA16ABD0029C9C9 /* No Waste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "No Waste.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFBEF3B22AA16ABD0029C9C9 /* No_WasteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = No_WasteApp.swift; sourceTree = "<group>"; };
 		EFBEF3B42AA16ABD0029C9C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF0B9FEE2AAD035F00EDF71E /* SwiftKeychainWrapper in Frameworks */,
+				EF0B9FEB2AAD035400EDF71E /* Auth0 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +65,13 @@
 		EFBEF3B12AA16ABD0029C9C9 /* No Waste */ = {
 			isa = PBXGroup;
 			children = (
+				EF0B9FF72AAD924600EDF71E /* Auth0.plist */,
 				EFBEF3B22AA16ABD0029C9C9 /* No_WasteApp.swift */,
 				EFBEF3B42AA16ABD0029C9C9 /* ContentView.swift */,
+				EF0B9FF32AAD078100EDF71E /* HomeView.swift */,
+				EF0B9FEF2AAD03E100EDF71E /* MotionManager.swift */,
+				EF0B9FF52AAD085200EDF71E /* UserViewModel.swift */,
+				EF0B9FF12AAD069000EDF71E /* Theme.swift */,
 				EFBEF3B62AA16AC20029C9C9 /* Assets.xcassets */,
 				EFBEF3B82AA16AC20029C9C9 /* Preview Content */,
 			);
@@ -83,6 +102,10 @@
 			dependencies = (
 			);
 			name = "No Waste";
+			packageProductDependencies = (
+				EF0B9FEA2AAD035400EDF71E /* Auth0 */,
+				EF0B9FED2AAD035F00EDF71E /* SwiftKeychainWrapper */,
+			);
 			productName = "No Waste";
 			productReference = EFBEF3AF2AA16ABD0029C9C9 /* No Waste.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,10 @@
 				Base,
 			);
 			mainGroup = EFBEF3A62AA16ABD0029C9C9;
+			packageReferences = (
+				EF0B9FE92AAD035400EDF71E /* XCRemoteSwiftPackageReference "Auth0" */,
+				EF0B9FEC2AAD035F00EDF71E /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+			);
 			productRefGroup = EFBEF3B02AA16ABD0029C9C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFBEF3BA2AA16AC20029C9C9 /* Preview Assets.xcassets in Resources */,
+				EF0B9FF82AAD924600EDF71E /* Auth0.plist in Resources */,
 				EFBEF3B72AA16AC20029C9C9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +166,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFBEF3B52AA16ABD0029C9C9 /* ContentView.swift in Sources */,
+				EF0B9FF62AAD085200EDF71E /* UserViewModel.swift in Sources */,
+				EF0B9FF22AAD069000EDF71E /* Theme.swift in Sources */,
+				EF0B9FF02AAD03E100EDF71E /* MotionManager.swift in Sources */,
+				EF0B9FF42AAD078100EDF71E /* HomeView.swift in Sources */,
 				EFBEF3B32AA16ABD0029C9C9 /* No_WasteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +376,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EF0B9FE92AAD035400EDF71E /* XCRemoteSwiftPackageReference "Auth0" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/Auth0.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.0;
+			};
+		};
+		EF0B9FEC2AAD035F00EDF71E /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF0B9FEA2AAD035400EDF71E /* Auth0 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF0B9FE92AAD035400EDF71E /* XCRemoteSwiftPackageReference "Auth0" */;
+			productName = Auth0;
+		};
+		EF0B9FED2AAD035F00EDF71E /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF0B9FEC2AAD035F00EDF71E /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EFBEF3A72AA16ABD0029C9C9 /* Project object */;
 }
